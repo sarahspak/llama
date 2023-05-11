@@ -1,9 +1,10 @@
 # Copyright (c) Meta Platforms, Inc. and affiliates.
 # This software may be used and distributed according to the terms of the GNU General Public License version 3.
+source env.sh
 
-PRESIGNED_URL=""             # replace with presigned url from email
+PRESIGNED_URL="${URL}"             # replace with presigned url from email
 MODEL_SIZE="7B,13B,30B,65B"  # edit this list with the model sizes you wish to download
-TARGET_FOLDER=""             # where all files should end up
+TARGET_FOLDER="llama_weights"             # where all files should end up
 
 declare -A N_SHARD_DICT
 
